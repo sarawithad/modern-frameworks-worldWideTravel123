@@ -1,0 +1,18 @@
+<h1>Guides!</h1>
+
+<!-- using ng-repeat bc ng-repeat loves arrays of objects/ repeating them to build lists -->
+	<div ng-repeat="potato in guides"> <!-- potato because it doesn't matter, guides is from $scope.guides -->
+		<h2>{{potato.title}}</h2> <!-- accesses title within the guides array -->
+		<ul>
+			<li>{{potato.type}}</li> <!-- accesses type within the guides array -->
+			<li>{{potato.price}}</li> <!-- accesses price within the guides array -->
+		</ul>
+	</div>
+
+
+	<!-- not necessary for exercise, just showing ng-model -->
+	<div>
+		<input ng-model="newGuide.title">
+		<input ng-model="newGuide.type">
+		<input ng-model="newGuide.price">
+	</div>
